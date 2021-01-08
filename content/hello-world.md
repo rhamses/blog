@@ -8,7 +8,7 @@ image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2
 
 Há um ano atrás, juntei toda a minha coragem e decidi postar no twitter algumas das minhas ideias que estavam na gaveta temendo que a "polícia do código" fosse destacar cada erro de cada um desses projetos, mas para minha surpresa só recebi elogios de cada uma das iniciativas, com algumas até conseguindo um certo alcance como essa aqui que é um [gerador de lema da nossa bandeira](https://gerabandeira.netlify.app/)
 
-[![Imagem do tuite que descreve o fio de projetos que fiz em 2019](https://i.ibb.co/1sMrR0w/Frame-2.png)](https://twitter.com/Rhamses/status/1214535685241278464)
+[![Imagem do tuite que descreve o fio de projetos que fiz em 2019](/img/hello-world-twitter.png)](https://twitter.com/Rhamses/status/1214535685241278464)
 
 
 Então pra esse ano eu resolvi tirar um dos mais enterrados dos projetos: Este blog aqui. 
