@@ -1,6 +1,6 @@
 ---
 title: Hello World
-description: Em 2021, decidi criar um novo hábito: manter um blog!
+description: "Em 2021, decidi criar um novo hábito: manter um blog!"
 image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&h=630&fit=crop
 ---
 
