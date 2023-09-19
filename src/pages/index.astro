@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import slugify from "../utils/slugify";
 
-const title = "Blog";
+const title = "Rhamsés Blog";
 const description = "Latest articles.";
 const permalink = `${Astro.site.href}blog`;
 
@@ -20,7 +21,7 @@ allPosts = allPosts.sort(
   current="blog"
 >
   <div class="container">
-    <h1>Blog</h1>
+    <h1>{description}</h1>
     {
       allPosts.map((post, index) => {
         const href = `/${post.file.split("/").pop().split(".").shift()}`;
@@ -28,6 +29,11 @@ allPosts = allPosts.sort(
           <div>
             {index !== 0 && <hr />}
             <div class="post-item">
+              <figure>
+                <a href={href}>
+                  <img src={"/assets/blog/" + slugify(post.frontmatter.title)+ "/capa.webp"} alt="">
+                </a>
+              </figure>
               <h2>
                 <a href={href}>{post.frontmatter.title}</a>
               </h2>
