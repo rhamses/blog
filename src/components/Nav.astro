@@ -1,5 +1,5 @@
 ---
-// import ThemeToggleButton from "./ThemeToggleButton.svelte";
+import ThemeToggleButton from "./ThemeToggleButton.svelte";
 const { current = "" } = Astro.props;
 ---
 
@@ -57,6 +57,6 @@ const { current = "" } = Astro.props;
 
 <nav>
   <div class="theme-toggle-container">
-    <!-- <ThemeToggleButton client:load /> -->
+    <ThemeToggleButton client:load />
   </div>
 </nav>
