@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import slugify from "../utils/slugify";
 
 const title = "Rhamsés Blog";
-const description = "Latest articles.";
+const description = "Articles about software engineering and Web development.";
 const permalink = `${Astro.site.href}blog`;
 
 let allPosts = await Astro.glob("../data/blog-posts/*.mdx");
@@ -21,7 +21,7 @@ allPosts = allPosts.sort(
   current="blog"
 >
   <div class="container">
-    <h1>{description}</h1>
+    <h1>Latest Articles</h1>
     {
       allPosts.map((post, index) => {
         const href = `/${post.file.split("/").pop().split(".").shift()}`;

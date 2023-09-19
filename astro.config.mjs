@@ -5,7 +5,7 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-blog-template.netlify.app",
+  site: "https://blog.rhams.es",
   integrations: [embeds(), mdx(), svelte()],
   markdown: {
     shikiConfig: {
