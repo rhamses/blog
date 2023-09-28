@@ -30,12 +30,22 @@ allPosts = allPosts.sort(
             {index !== 0 && <hr />}
             <div class="post-item">
               <figure>
-                <a href={href}>
-                  <img src={"/assets/blog/" + slugify(post.frontmatter.title)+ "/capa.webp"} alt="">
+                <a href={import.meta.env.BASE_URL + href}>
+                  <img
+                    src={
+                      import.meta.env.BASE_URL +
+                      "/assets/blog/" +
+                      slugify(post.frontmatter.title) +
+                      "/capa.webp"
+                    }
+                    alt=""
+                  />
                 </a>
               </figure>
               <h2>
-                <a href={href}>{post.frontmatter.title}</a>
+                <a href={import.meta.env.BASE_URL + href}>
+                  {post.frontmatter.title}
+                </a>
               </h2>
               <p>{post.frontmatter.description}</p>
               <div class="post-item-footer">
