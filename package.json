@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build-old": "astro build",
+    "build": "astro build && mkdir ./blog && cp -R ./dist/* ./blog && mv ./blog ./dist",
     "preview": "astro preview",
     "astro": "astro"
   },
