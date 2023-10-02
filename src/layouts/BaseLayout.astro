@@ -8,13 +8,19 @@ export interface Props {
   description: string;
   permalink: string;
   current?: string;
+  image?: string;
 }
-const { title, description, permalink, current } = Astro.props;
+const { title, description, permalink, current, image } = Astro.props;
 ---
 
 <html lang="pt-br">
   <head>
-    <BaseHead title={title} description={description} permalink={permalink} />
+    <BaseHead
+      title={title}
+      description={description}
+      permalink={permalink}
+      image={image}
+    />
   </head>
   <body>
     <div class="layout">
@@ -26,24 +32,25 @@ const { title, description, permalink, current } = Astro.props;
 
       <Footer />
     </div>
-  </body><style>
-    .layout {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-      min-height: 100vh;
-    }
+    <style>
+      .layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        min-height: 100vh;
+      }
 
-    main {
-      flex: 1;
-      position: relative;
-      margin: 0 auto;
-      max-width: 1400px;
-      padding: 1em 2em;
-      box-sizing: border-box;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
+      main {
+        flex: 1;
+        position: relative;
+        margin: 0 auto;
+        max-width: 1400px;
+        padding: 1em 2em;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </body>
 </html>
