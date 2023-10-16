@@ -3,23 +3,20 @@ import mdx from "@astrojs/mdx";
 import embeds from "astro-embed/integration";
 import svelte from "@astrojs/svelte";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://rhams.es/blog",
   base: "/blog",
-  integrations: [embeds(), mdx(), svelte()],
+  integrations: [embeds(), mdx(), svelte(), sitemap()],
   markdown: {
     shikiConfig: {
-      theme: "nord",
+      theme: "nord"
     },
     remarkPlugins: ["remark-gfm", "remark-smartypants"],
-    rehypePlugins: [
-      [
-        "rehype-external-links",
-        {
-          target: "_blank",
-        },
-      ],
-    ],
-  },
+    rehypePlugins: [["rehype-external-links", {
+      target: "_blank"
+    }]]
+  }
 });
