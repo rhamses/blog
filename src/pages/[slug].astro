@@ -21,7 +21,7 @@ const permalink = `${Astro.site.href}blog/${slug}`;
   description={description}
   permalink={permalink}
   current="blog"
-  image={import.meta.env.BASE_URL + "/assets/blog/" + slug + "/capa.webp"}
+  image={"/assets/blog/" + slug + "/capa.webp"}
 >
   <header>
     <p>{publishDate}</p>
